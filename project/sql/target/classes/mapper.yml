@@ -1,0 +1,55 @@
+mapper:
+  sql: E:\\vcc\\mall.sql    ###  数据库地址
+  dao: com.vcc.sdk.dao      ###  model 模型
+  mapper: com.vcc.sdk.mapper   ###  mapper 地址
+  service: com.vcc.sdk.service  # service 地址
+  mapperxml: src/main/resource/mapper/   ### xml 地址
+  md: src/main/resource/sql.md    ### md 说明
+
+table:    
+  insert:
+    insertTo:
+      property: *
+      ignor: sort,update_time,tb_status
+    insertList:
+      property: *
+      ignor: show_status,update_time,tb_status
+      run: true
+  select:
+    getCount:
+      result: java.lang.Integer
+      property: count(id)
+    getAll:
+      property: *
+      type: java.util.Map
+      ignor: "" 
+  update:
+    updateBatch:
+      property: *
+      ignor: create_time,update_time
+      run: true 
+    update:
+      property: *
+      ignor: create_time
+
+cms_help:
+  insert:
+    insertLi:
+      property: *
+      ignor: create_time,update_time,tb_status
+  update:
+    updateBatchT:
+      property: create_time
+      ignor: tb_status
+cms_help_category:
+  insert:
+    insertLi:
+      property: *
+      ignor: create_time,update_time,tb_status
+  update:
+    updateBatchT:
+      property: create_time
+      ignor: tb_status
+
+
+
