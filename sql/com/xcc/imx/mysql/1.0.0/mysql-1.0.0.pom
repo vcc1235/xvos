@@ -87,7 +87,7 @@
     <distributionManagement>
         <repository>
             <id>com.xcc</id>
-            <url>file:/U0501/resposit</url>
+            <url>file:/Project/xvos/sql</url>
         </repository>
     </distributionManagement>
 
