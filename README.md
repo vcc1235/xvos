@@ -7,6 +7,11 @@
             <artifactId>sql</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.xcc.imx</groupId>
+            <artifactId>mysql</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 <repositories>
         <repository>
             <id>com.vcc</id>
