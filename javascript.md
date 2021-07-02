@@ -1,6 +1,7 @@
 - xcc-uni 说明
   - components 组件
     - v-slider  滑动条
+    - v-image  图片
   - common 工具类
     - common 通用工具类
     - single  uni扩展
