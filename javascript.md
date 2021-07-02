@@ -1,0 +1,13 @@
+- xcc-uni 说明
+  - components 组件
+    - v-slider  滑动条
+  - common 工具类
+    - common 通用工具类
+    - single  uni扩展
+    - string  原生扩展
+  - plugins  插件类
+    - jsencrypt    RSA , Base64 加密类
+    - xsign.js   自定义加密
+  - api 网络类
+    - xs.js    uniapp 网络请求封装
+
