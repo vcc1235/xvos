@@ -10,4 +10,10 @@
     - xsign.js   自定义加密
   - api 网络类
     - xs.js    uniapp 网络请求封装
+  - style 样式类
+    - color.scss    颜色
+    - flex.scss  布局
+    - padding.scss   内间距
+    - margin.scss 外间距
+    - font.scss  字体大小
 
