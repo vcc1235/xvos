@@ -41,3 +41,5 @@
   xcc-uni update
   ~~~
 
+[web](./tool/index.html)
+
