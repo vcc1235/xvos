@@ -19,13 +19,6 @@
   -e MYSQL_ROOT_PASSWORD=123456  (容器环境变量配置 如数据库密码 MYSQL_ROOT_PASSWORD=123456)
   ~~~
 
-### nginx
-
-- [nginx.sh](./nginx/nginx.sh)
-- [nginx.conf](./nginx/nginx.conf) 
-  - nginx.conf 文件放入 /root/目录下
-  - 执行 nginx.sh 命令即可
-
 ### docker - contain
 
 - [docker.sh](./docker.sh)
