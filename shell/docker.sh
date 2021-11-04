@@ -42,6 +42,15 @@ function mongod(){
 	-p 27017:27017 \
 	-d mongo:latest --auth
 }
+function minio(){
+	docker pull minio/minio:RELEASE.2021-03-12T00-00-47Z
+	docker run -p 9000:9000  --name minio --restart=always --privileged \
+	-e MINIO_ACCESS_KEY=admin \
+	-e MINIO_SECRET_KEY=$PWD \
+	-v /data/www:/data \
+	-v /data/conf/minio:/root/.minio \
+	-d minio/minio:RELEASE.2021-03-12T00-00-47Z server /data
+}
 case $1 in
         mysql)
                 if [ -n "$2" ]; then
@@ -57,6 +66,12 @@ case $1 in
 	;;
 	mongo)
 		mongod
+	;;
+	minio)
+		if [ -n "$2" ];then
+			PWD=$2
+		fi
+		minio
 	;;
         stop)
                 case $2 in
